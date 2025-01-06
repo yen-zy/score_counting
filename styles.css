@@ -1,0 +1,234 @@
+:root {
+    --primary: #21201E;
+    --primary-light: #e1f2ff;
+    --primary-dark: #9ed3ff;  /* Darker shade for hover/active states */
+    --secondary: #DDFF52;
+    --secondary-dark: #b5e9ff;
+    --accent: #FFDDAE;
+    --accent-dark: #c79452;
+    --border-color: #dee2e6;
+    --gray: #f1f1f1;
+    --white: #ffffff;
+    
+    /* Add font family variables */
+    --font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+    background-color: var(--gray);
+    font-size: 12px;
+    font-family: var(--font-family-base);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.score-table {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    padding: 10px;
+}
+
+.score-table .table {
+    margin-bottom: 0;
+}
+
+
+.bg-primary-subtle {
+    background-color: var(--primary) !important;
+    color: var(--white) !important;
+}
+
+.bg-success-subtle {
+    background-color: var(--primary-light) !important;
+}
+
+.border-radius-100 {
+    border-radius: 100px !important;
+}
+
+.form-control-sm:focus {
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 0.2rem rgba(255, 221, 174, 0.25);
+}
+
+/* Update button colors */
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: var(--white);
+}
+
+.btn-primary:hover, .btn-primary:active {
+    background-color: var(--secondary) !important;
+    border-color: var(--primary) !important;
+    color: #333 !important;
+}
+
+.btn-success {
+    background-color: var(--white);
+    border-color: var(--primary);
+    color: #333;
+}
+
+.btn-success:hover, .btn-success:active {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    color: var(--white) !important;
+}
+
+.btn-danger {
+    background-color: var(--accent);
+    border-color: var(--accent-dark);
+    color: #333;
+}
+
+.btn-danger:hover {
+    background-color: var(--accent-dark);
+    border-color: var(--accent-dark);
+    color: #333;
+}
+
+.btn-outline-danger {
+    color: #333;
+    border-color: var(--accent);
+}
+
+.btn-outline-danger:hover {
+    background-color: var(--accent);
+    border-color: var(--accent-dark);
+    color: #333;
+}
+
+.assignment-header {
+    font-weight: 700;
+    padding: 8px 6px;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 400px;
+    text-align: center;
+    border: none;
+}
+
+/* Assignment B cell styling */
+.assignment-a-cell, .assignment-b-cell {
+    padding: 6px 4px !important;
+}
+
+/* Score coloring */
+.final-score {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.score-high {
+    color: var(--primary) !important;
+}
+
+.score-medium {
+    color: var(--primary) !important;
+}
+
+.score-low {
+    color: #dc3545 !important;
+}
+
+/* Modal styling */
+.modal-header {
+    background-color: var(--primary);
+    border-bottom: 1px solid var(--primary-dark);
+}
+
+/* Keep other existing styles */
+/* ... */
+.score-table thead {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.score-table th {
+    font-weight: 600;
+    padding: 8px 6px;
+    font-size: 12px;
+    border: none;
+}
+
+.score-table td {
+    padding: 6px 4px;
+    vertical-align: middle;
+}
+
+.student-name {
+    width: 180px !important;
+}
+
+.btn-sm {
+    padding: 3px 6px;
+    font-size: 12px;
+}
+
+.criteria-header th {
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.criteria-header th small {
+    font-size: 8px;
+    font-weight: 400;
+    display: block;
+}
+
+/* Modal adjustments */
+.modal-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.modal-body {
+    font-size: 14px;
+}
+
+/* Add these styles to hide input arrows */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Add hover effect for better UX */
+.form-control-sm:hover {
+    background-color: #f8f9fa;
+}
+
+/* Style for the export button */
+.btn-export {
+    margin-left: 10px;
+}
+
+/* Add compact table styles */
+.table>:not(caption)>*>* {
+    padding: 7px 10px;
+}
+
+/* Adjust heading size */
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Make buttons more compact */
+.btn {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 10px;
+}
+
+/* Add these styles */
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
